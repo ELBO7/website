@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html{
@@ -124,6 +125,7 @@ main{
     padding: 0.3em 0;
     border: 3px solid #1B1A17;
     border-radius: 7px;
+    box-shadow: 2px 2px 5px;
 }
 
 #topicon a:hover{
@@ -232,7 +234,6 @@ main{
         font-size: 2em;
         padding: 0em;
         position: absolute;
-        left: 0.7em;
     }
     .btnback{
         display: block;
@@ -293,9 +294,10 @@ main{
     }
     .blocks{
         margin-left: 0;
+        margin-right: 0;
     }
     .block{
-        margin: 0em 7vw;
+        margin: 0em 2em;
         margin-bottom: 3em;
     }
     .block:nth-child(1){

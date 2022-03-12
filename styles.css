@@ -297,10 +297,27 @@ main{
         margin-right: 0;
     }
     .block{
-        margin: 0em 2em;
+        margin-left: 5vw;
         margin-bottom: 3em;
     }
     .block:nth-child(1){
         margin-top: 9em;
     }
+}
+
+@media (max-width: 415px) {
+    .block{
+        margin-left: 8vw;
+        margin-bottom: 3em;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .block{
+        margin-left: 5vw;
+        margin-bottom: 3em;
+    }
+
 }

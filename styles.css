@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #E6D5B8;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+nav{
+    background: #1B1A17;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    box-shadow:  1px 10px 14px rgba(0, 0, 0, 0.308);
+}
+
+label.logo .head{
+    cursor: pointer;
+    color: white;
+    font-size: 2em;
+    line-height: 10vh;
+    padding: 0 3em;
+    font-weight: bold;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+label.logo .head:hover{
+    color: #F0A500;
+    background: none;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 4em;
+    left: -100%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 10vh;
+    margin: 0 0.5em;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 0.4em 0.8em;
+    border-radius: 8px;
+}
+
+a.active, a:hover{
+    background: #F0A500;
+    transition: all 500ms ease;
+}
+
+.btnmenu{
+    font-size: 2em;
+    color: white;
+    float: right;
+    line-height: 10vh;
+    margin-right: 1.2em;
+    cursor: pointer;
+    display: none;
+}
+.btnback{
+    font-size: 2em;
+    float: right;
+    line-height: 10vh;
+    margin-right: 1em;
+    color: #F0A500;
+    cursor: pointer;
+    display: none;
+}
+
+.btnback:hover{
+    color: #E6D5B8;
+    transition: all 400ms ;
+}
+
+.btnmenu:hover{
+    color: #F0A500;
+    transition: all 700ms ease;
+}
+
+#check{
+    display: none;
+}
+
+
+  /* main*/
+
+
+main{
+    margin: 8em 2em;
+}
+
+#topicon a{
+    color: black;
+    position: absolute;
+    left: 95vw;
+    top: 91vh;
+    position: fixed;
+    background-color: #F0A500;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.3em 0;
+    border: 2px solid #1B1A17;
+    border-radius: 7px;
+}
+
+#topicon a:hover{
+    color: #F0A500;
+    background-color: #1B1A17;
+    border: 2px solid #F0A500;
+}
+
+#top{
+    position: absolute;
+    top: 0;
+}
+
+.blocks{
+    margin: 0em 5em;
+}
+
+.block{
+    background-color: white;
+    width: 20em;
+    height: 25em;
+    margin: 8em 2em;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 4px 4px 8px; 
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.block:hover {
+    box-shadow: 8px 8px 28px;
+}
+
+
+.imgs{
+    width: 15em;
+    height: 15em;
+    margin: 1em;
+    border: 8px solid #F0A500;
+    border-radius: 10px;
+}
+
+.textarea{
+    background: #1b1a17;
+    border-radius: 35px;
+    height: 4em;
+}
+
+.textarea:hover {
+    background-color: #F0A500;
+    transition: all 500ms ease-out;
+
+}
+
+.textarea:hover h3{
+    color: #1b1a17;
+    transition: all 200ms ease;
+}
+
+
+.textarea img{
+    width: 2em;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.textarea h3{
+    color: #FFF89A;
+    margin-left: 1em;
+    margin-top: -1.5em;
+    text-align: center;
+}
+
+
+
+@media (min-width: 792px) {
+    label.logo .head{
+        font-size: 2.8em;
+        position: absolute;
+        padding-left: 2em;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+
+    .block{
+        margin: 8em 2em;
+    }
+    #topicon a{
+        left: 90vw;
+    }
+    
+}
+
+@media (max-width: 789px) {
+    label.logo .head{
+        font-size: 2em;
+        padding: 0em;
+        position: absolute;
+        left: 0.7em;
+    }
+    .btnback{
+        display: block;
+    }
+
+    .btnmenu{
+        display: block;
+        margin-left: 0;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1B1A17;
+        left: 0;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 4em;
+        line-height: 2.5em;
+    }
+
+    nav ul li a{
+        font-size: 1.2em;
+        font-family: 'Akaya Telivigala', cursive;
+        color: #F0A500;
+        border: 0.3em solid #1B1A17;
+    }
+    nav ul li a:hover{
+        background: #F0A500;
+        color: #1B1A17;
+    }
+
+    a.active{
+        background: #1b1a17;
+        color: #E6D5B8;
+        border: 2px solid #F0A500;
+    }
+
+
+
+    #check:checked ~ ul{
+        border-top: 4px solid rgba(0, 0, 0, 0.26);
+        left: 0;
+        top: 0;
+        transition:  100ms;
+    }
+
+    main{
+        background-size: 90vw 90vh;
+    }
+    #topicon a{
+        position: absolute;
+        left: 88%;
+        top: 92vh;
+        position: fixed;
+    }
+}

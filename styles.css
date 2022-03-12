@@ -308,15 +308,17 @@ main{
     .block{
         margin-left: 8vw;
         margin-bottom: 3em;
+        margin-right: 0;
     }
 
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .block{
         margin-left: 5vw;
         margin-bottom: 3em;
+        margin-right: 0;
     }
 
 }
